@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="classify-container">
+    <h2>Classify Your Waste</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileInput" onchange="previewImage(event)" required>
+        <br><br>
+        <img id="preview" width="220" style="display:none; border-radius:15px;" />
+        <br><br>
+        <button type="submit" class="btn">Classify Image</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result-card">
+        <h3>Prediction: {{ prediction }}</h3>
+        <p>Confidence: {{ confidence }}%</p>
+
+        <div class="progress">
+            <div class="progress-bar" style="width: {{ confidence }}%">
+                {{ confidence }}%
+            </div>
+        </div>
+
+        <br>
+        <img src="{{ image_path }}" width="220" style="border-radius:15px;">
+    </div>
+    {% endif %}
+</div>
+
+<script>
+function previewImage(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+        var output = document.getElementById('preview');
+        output.src = reader.result;
+        output.style.display = "block";
+    };
+    reader.readAsDataURL(event.target.files[0]);
+}
+</script>
+
+{% endblock %}

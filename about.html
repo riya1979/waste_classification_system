@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="about-container">
+
+    <h1>About This Project</h1>
+
+    <p>
+        This is an AI-powered Waste Classification Web Application developed 
+        using Deep Learning and Flask. The system classifies waste images into 
+        different categories such as Organic and Recyclable using a 
+        Convolutional Neural Network (CNN).
+    </p>
+
+    <hr>
+
+    <h2>Problem Statement</h2>
+    <p>
+        Manual waste segregation is time-consuming and inefficient. 
+        This project aims to automate the classification process 
+        using Artificial Intelligence to improve environmental sustainability.
+    </p>
+
+    <hr>
+
+    <h2>Model Architecture</h2>
+    <ul>
+        <li>Architecture: Custom CNN</li>
+        <li>Input Size: 224 x 224</li>
+        <li>Optimizer: Adam</li>
+        <li>Loss Function: Binary cross entropy</li>
+        <li>Activation Function: ReLU & Sigmoid</li>
+        <li>Epochs: 10</li>
+    </ul>
+
+    <hr>
+
+    <h2>⚙ Technologies Used</h2>
+    <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>TensorFlow & Keras</li>
+        <li>HTML, CSS</li>
+    </ul>
+
+    <hr>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Image Upload</li>
+        <li>Real-time Image Preview</li>
+        <li>Confidence Score Visualization</li>
+        <li>Interactive Web Interface</li>
+    </ul>
+
+</div>
+
+{% endblock %}
