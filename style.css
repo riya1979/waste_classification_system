@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f9f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 40px;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #2ecc71;
+}
+
+.hero {
+    margin-top: 10px;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    color: white;
+}
+
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    color: #2ecc71;
+}
+
+.classify-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.organic {
+    color: green;
+}
+
+.recyclable {
+    color: blue;
+}
+
+.page {
+    text-align: center;
+    padding: 60px;
+}
+.classify-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 35px;
+    background: linear-gradient(145deg, #2ecc71, #27ae60);
+    color: white;
+    text-decoration: none; 
+    border-radius: 40px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 
+        0 6px 15px rgba(0,0,0,0.15),
+        inset 0 -3px 5px rgba(0,0,0,0.2);
+    transition: all 0.25s ease;
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.25),
+        inset 0 -3px 5px rgba(0,0,0,0.2);
+}
+
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.2);
+}
+
+.result-card {
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.progress {
+    background: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #2ecc71;
+    padding: 6px;
+    color: white;
+    border-radius: 20px;
+}
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    line-height: 1.7;
+}
+
+.about-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-container h2 {
+    margin-top: 30px;
+    color: #2ecc71;
+}
+
+.about-container ul {
+    padding-left: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2ecc71;
+}
